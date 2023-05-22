@@ -12,7 +12,10 @@
 }
 
 .header{
-    background-image: url('./Images/background.jpg');
+    background-image: url('./Images/backgound.PNG');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
     
     color: black;
     padding:10px, 10%;
@@ -81,21 +84,34 @@
 }
 
 .header .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #fbf2fc;
 }
 
 
 
 
 body{
+    background-color: #f8f3fa;
 
-  background-color: #f5d5ffb4;
 }
 footer{
-    background-image: url('./Images/background.jpg');
+    background-image: url('./Images/backgound.PNG');
+    background-repeat: no-repeat;
+    background-size: 100%;
     width: 100%;
     margin: 0% auto;
+    padding: 2%;
 }
+
+/* Footer*/
+.firma{
+    
+    font-family: 'Signika', sans-serif;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    
 /* cajas del index*/
 .container {
     display: flex;
@@ -289,10 +305,3 @@ h3 {
     
 }
 
-/* Footer*/
-.firma{
-    
-font-family: 'Signika', sans-serif;
-    font-size: 15px;
-    text-align: center;
-}
