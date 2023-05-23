@@ -7,9 +7,6 @@
     font-size: 20px;
 }
 
-.header .logo{
-    cursor: pointer;
-}
 
 .header{
     background-image: url('./Images/backgound.PNG');
@@ -57,7 +54,8 @@
     transform: scale(1.1);
 }
 
-/* desplegable de trabajos:*/
+/* barra navegación - desplegable de trabajos:*/
+
 .header .dropdown {
     position: relative;
     display: inline-block;
@@ -132,11 +130,7 @@ footer{
     flex-direction: column;
   }
   
-  @media (max-width: 768px) {
-    .box {
-      width: 100%;
-    }
-  }
+
   
   
   .box img {
@@ -172,6 +166,8 @@ footer{
   
 
    /*trabajos */
+
+
 .layout-container{
     display: flex;
     flex-direction: column;
@@ -235,6 +231,8 @@ footer{
     width: 350px;
     height: 350px;
     display: none;
+    cursor:pointer;
+
 }
 .slider-item:hover{
     transform: scale(1.3);
@@ -262,13 +260,14 @@ footer{
 
 
 /* grid de página SObre MI*/
+
+
 .grid-layout{
-    height: auto;
-    width: auto;
+
     display: grid;
-    grid-template-areas: 'encabezado encabezado encabezado'
-                         'sobre sobre foto';
-    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    grid-template-areas: 'encabezado encabezado'
+                        'sobre foto';
+    grid-template-columns: 2fr 1fr;
 }
 
 .encabezado{
@@ -295,6 +294,7 @@ text-align:left;
     display: block;
     margin: auto;
     position: relative;
+    padding-bottom: 5%;
 }
 
 
@@ -305,3 +305,218 @@ h3 {
     
 }
 
+ul{
+    padding: 3%;
+    list-style-image: url(./Images/Flaticon\ -\ pequeño.png)
+}
+
+/* Estilos generales para otros tamaños de pantalla */
+/* ... */
+     /* Estilos para dispositivos móviles */
+    @media (max-width: 768px) {
+        /*Cajas de producto del Index*/
+
+        .box {
+            width: 90%;
+          }
+
+
+         /*trabajos */
+        .layout-container{
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+        }
+
+        .descripción{
+            text-align: justify;
+            padding: 3%;
+            margin: 0%;
+            font-size: 15px;
+        }
+        .domicilio{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            padding: 3px;
+            width: 100%;
+        }
+
+        .artistico{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            padding: 3px;
+            width: 100%;
+        }
+
+
+        .progresión{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            padding: 3px;
+            width: 100%;
+        }
+        .teatro{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            padding: 3px;
+            width: 100%;
+        }
+
+        .producción{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            padding: 3px;
+            width: 100%;
+        }
+
+        .fieras{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            padding: 3px;
+            width: 100%;
+        }
+
+
+        .slider-item{
+            width: 350px;
+            height: 350px;
+            display: none;
+        }
+
+        .carousel-inner {
+            display: flex;
+            justify-content: center;
+            transition: transform 0.5s ease-in-out;
+            padding: 0%;
+        }
+        .slider-item:hover{
+            transform:none;
+        }
+    
+        /* grid area de página SObre Mi*/
+        .grid-layout{
+            display: flex;
+            flex-direction: column;
+        }
+
+        }
+
+/* Estilos para tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+ 
+ 
+ 
+    /*trabajos */
+
+
+    .layout-container{
+        display: flex;
+        flex-direction: column;
+        padding: 4%;
+    }
+
+    .descripción{
+        text-align: justify;
+        padding: 4%;
+        font-size: 15px;
+    }
+    .domicilio{
+        display: flex;
+        justify-content:space-evenly;
+        padding: 3px ;
+        width: 100%;
+    }
+
+    .artistico{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3px;
+        width: 100%;
+    }
+
+
+    .progresión{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3px;
+    }
+    .teatro{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3px;
+        width: 100%;
+    }
+
+    .producción{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3px;
+    }
+
+    .fieras{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 3px;
+    }
+
+
+    .slider-item{
+        width: 300px;
+        height: 300px;
+        display: none;
+    }
+
+    .slider-item:hover{
+        transform:none;
+    }
+
+
+    /* grid de página SObre MI*/
+    .grid-layout{
+        display: grid;
+        grid-template-areas: 'encabezado encabezado'
+                            'sobre foto';
+        grid-template-columns: 2fr 1fr;
+    }
+    
+
+    .encabezado{
+        grid-area: encabezado;
+        padding: 2%;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .sobre-mi{
+    grid-area: sobre;
+    padding: 5%;
+    text-align:left;
+    }
+    .foto{
+        grid-area: foto;
+        display: flex;
+        justify-content:center;
+        padding: 10px;
+        margin: auto;
+    }
+    .sobreimg{
+        width: auto;
+        height: 530px ;
+        display: block;
+        margin: auto;
+        position: relative;
+    }
+
+        }
+        
+/* Estilos para pantallas de escritorio */
+@media (min-width: 1025px) {
+/* Estilos específicos para pantallas de escritorio */
+}
