@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Mmmua</title>
+    <link rel="shortcut icon" href="./Images/Flaticon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Signika&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Signika&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header class="header">
+        <a class="logo" href="./Index.html">
+            <img src="./Images/Logo Victoria Mmmua.png" alt="Logo Victoria Mmmua">
+        </a>
+        <nav>
+            <a class="nav-links" href="Sobre mi.html">Sobre mi</a>
+            <div class="dropdown">
+                <a class="nav-links" href="./Trabajos.html">Trabajos realizados <img class="img" src="./Images/Trabajos/abajo.png" alt=""> </a>
+                <div class="dropdown-content">
+                    <a href="./Trabajos.html#domicilio">Social</a>
+                    <a href="./Trabajos.html#artistico">Artístico</a>
+                    <a href="./Trabajos.html#cine">Cine</a>
+                    <a href="./Trabajos.html#Teatro" >Teatro</a>
+                    <a href="./Trabajos.html#producciones">Producciones</a>
+                </div>
+            </div>
+            <a class="nav-links" href="Contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main>
+
+        <form id="form" action="https://formspree.io/f/moqzznob" method="POST">
+            <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+            <button type="submit">Enviar</button>
+            </div>
+        </form>
+        
+    </main>
+
+    <footer>
+        <div>
+            <p class="firma">Victoria Martínez Barón
+                <br>
+                Madrid
+                <br>
+                Mail: victoriammmua@gmail.com
+            </p>
+            <nav  class="firma">
+            <a href="https://www.instagram.com/victoriammmua/?igshid=NTc4MTIwNjQ2YQ%3D%3D"  class="firma">Instagram</a>
+            <a href="./https://api.whatsapp.com/send?phone=34671219505&text=Hola!%20Necesito%20el%20presupuesto%20de%20mi%20maquillaje%20y%20peinado"  class="firma">Whatsapp</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="contacto.js"> 
+        /*const $form= document.querySelector('#form')
+
+        $form.addEventListener('submit', handlesubmit)
+
+        async function handlesubmit(event) {
+            event.preventDefault()
+            const form = new FormData(this)
+            const response = await fetch(this.action, {
+                method: this.method,
+                body: form,
+                headers: { 
+                    'Accept': 'application/json'
+                }
+            })
+            if (response.ok) { 
+            this.reset()
+            alert('Gracias por contactarte, te contestaré pronto.')
+            }
+        }*/
+    </script>
+    
+</body>
+</html>

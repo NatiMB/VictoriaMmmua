@@ -227,7 +227,3 @@ document.addEventListener("DOMContentLoaded", function() {
       images[currentIndex].classList.add("active");
     }
   });
-
-  
-  
-  
