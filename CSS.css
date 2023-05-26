@@ -12,14 +12,15 @@
     background-image: url('./Images/backgound.PNG');
     background-repeat: no-repeat;
     background-size: 100%;
-
-    
+    position:static;    
     color: black;
     padding:10px, 10%;
     display: flex;
     justify-content:first baseline;
     align-items: center;
     height: 130px;
+    position: sticky;
+    top: 0;
 }
 
 
