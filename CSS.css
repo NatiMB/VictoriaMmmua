@@ -108,6 +108,10 @@ footer{
         font-size: 15px;
         text-align: center;
     }
+.firma2 {
+    text-align: right;
+    font-size: 12px;
+}
 
     
 /* cajas del index*/
@@ -146,6 +150,13 @@ footer{
     object-fit: cover;
     margin-bottom: 30px;
   }
+
+  .box .foto3{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
   
  
   .box ul {
@@ -175,7 +186,7 @@ footer{
   }
   
   .btn-presupuesto:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
   
 
@@ -332,8 +343,12 @@ ul{
 
 
 /*Página con formulario de contacto*/
+form{
+    padding: 5% 10% 0% 10%;
+}
 .form-group {
     margin-bottom: 20px;
+    padding: 5px;
   }
   
   label {
@@ -343,21 +358,35 @@ ul{
   
   input,
   textarea {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+  } 
+  input, text{
+    width: 25%;
+    height: 25px
   }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
+
+/*Iframe Mapa*/
+    #map-container {
+        position:relative;
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+        height: 0;
+        padding-bottom: 30%; 
+        
+        margin: 10%;
+    }
+
+    #map {
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 90%;
+        height: 90%;
+    }
 
 
 /* Estilos generales para otros tamaños de pantalla */
